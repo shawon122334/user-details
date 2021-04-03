@@ -6,6 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+#title{
+  background-color: black;
+  color:white;
+  line-height: 25px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
