@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import userData from '../../userData/userData.json';
 import SingleUser from '../SingleUser/SingleUser';
+import TotalSalary from '../TotalSalary/TotalSalary';
 import './User.css';
 
 const User = () => {
@@ -22,10 +23,7 @@ const User = () => {
                 users.map(user=> <SingleUser handleButton={handleButton} user={user}></SingleUser> )
             }
             </div>
-            <div>
-                <h2>Total Clicked User : {count.length} </h2>
-                
-            </div>
+           <TotalSalary count={count}></TotalSalary>
         </div>
     );
 };

@@ -6,7 +6,7 @@ import './SingleUser.css';
 
 const SingleUser = (props) => {
     console.log(props.user);
-    const { img, name, email, phone } = props.user;
+    const { img, name, email, phone,yearly_income} = props.user;
     return (
         <div className="userDetail">
 
@@ -15,6 +15,7 @@ const SingleUser = (props) => {
             <h3>user name : {name}</h3>
             <h5>user email : {email}</h5>
             <h5>user phone : {phone}</h5>
+            <h5>uesr yearly income : {yearly_income}</h5>
             <button onClick={()=>props.handleButton (props.user)}><FontAwesomeIcon icon={faPlus} />add</button>
         </div >
     );
